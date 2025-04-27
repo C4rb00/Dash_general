@@ -1,0 +1,370 @@
+/* Fondo general */
+body, .app-container {
+    background-color: #f5f6fa !important;
+}
+
+/* Tarjetas principales */
+.dash-card, .shadow-sm, .bg-white, .border-0, .rounded-3 {
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07) !important;
+    border-radius: 18px !important;
+    background: #fff !important;
+    border: none !important;
+    padding: 24px !important;
+    margin-bottom: 32px;
+}
+
+.dash-card {
+    border-radius: 18px !important;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08) !important;
+    background: #fff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 24px !important;
+    transition: box-shadow 0.3s ease !important;
+}
+
+.dash-card > .card-body, .dash-card > .dbc-card-body {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Títulos de tarjetas */
+.dash-card-title, .card-title, h4, h5 {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    color: #1D1D1F !important;
+    margin-bottom: 8px !important;
+    font-size: 24px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+}
+
+/* Línea divisoria en tarjetas */
+.dash-card-divider {
+    height: 1px;
+    background-color: #E2E2E2;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+/* Botones */
+.btn-dark, .dbc-btn-dark, .w-100 {
+    background-color: #293377 !important;
+    border: none !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+}
+
+/* Dropdowns y radio items */
+.Select-control, .dbc-radio-items label, .form-label, .Select-placeholder {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    color: #828282 !important;
+}
+
+/* RadioItems label style */
+.dash-radio-items label, .dbc-radio-items label {
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    color: #828282 !important;
+}
+
+/* Leyendas de género */
+.gender-legend {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 16px !important;
+    gap: 32px !important;
+}
+
+.gender-legend .legend-color {
+    display: inline-block !important;
+    width: 32px !important;
+    height: 16px !important;
+    border-radius: 8px !important;
+    margin-right: 8px !important;
+    vertical-align: middle !important;
+}
+
+/* Imagen de género */
+.gender-img {
+    width: 70% !important;
+    max-width: 220px !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Imagen de métrica */
+.metric-icon {
+    width: 60px !important;
+    height: 60px !important;
+    background-color: #EDEDED !important;
+    border-radius: 50% !important;
+    padding: 12px !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+    margin-top: 0px !important;
+    display: block !important;
+}
+
+/* Valor de métrica */
+.metric-value {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 60px !important;
+    line-height: 60px !important;
+    color: #002B5B !important;
+    margin-top: -15px !important;
+    display: block !important;
+}
+
+/* Texto de métrica */
+.metric-text {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 24px !important;
+    color: #828282 !important;
+    margin-top: 4px !important;
+}
+
+/* Bordes de color para métricas */
+.metric-border-293377 {
+    border-top: 3px solid #293377 !important;
+    height: 4px;      
+    margin-top: auto !important;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0px !important;
+}
+
+.metric-border-FFA354 {
+    border-top: 3px solid #FFA354 !important;
+    height: 4px;      
+    margin-top: auto !important;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0px !important;
+}
+
+.metric-border-602A8C {
+    border-top: 3px solid #602A8C !important;
+    height: 4px;      
+    margin-top: auto !important;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0px !important;
+}
+
+/* Gráficas */
+.dash-graph, .dcc-graph {
+    width: 100%;
+    height: 100%;
+    min-height: 200px !important;
+    background: #fff !important;
+    border-radius: 18px !important;
+    flex: 1 1 auto !important;
+}
+
+
+/* Leyenda de donut y ring */
+.donut-legend, .ring-legend {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;
+    color: #828282 !important;
+}
+
+/* Responsive para tarjetas */
+@media (max-width: 991px) {
+    .dash-card, .shadow-sm, .bg-white {
+        margin-bottom: 24px !important;
+    }
+}
+
+/* Ajustes para inputs deshabilitados */
+.Select.is-disabled, .dbc-dropdown[disabled], .form-control[disabled] {
+    background-color: #f5f6fa !important;
+    color: #bdbdbd !important;
+}
+
+/* Ajustes para placeholder de dropdown */
+.Select-placeholder {
+    color: #bdbdbd !important;
+    font-weight: 400 !important;
+}
+
+/* Ajustes para botones de filtro */
+.filter-btn {
+    background-color: #293377 !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    border: none !important;
+}
+
+/* Ajustes para sombra de hover en tarjetas */
+.dash-card:hover, .shadow-sm:hover, .bg-white:hover {
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.12) !important;
+}
+
+/* Ajustes para leyenda de gráficos Plotly */
+.g-legend .traces .legendtoggle {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;
+    color: #828282 !important;
+}
+
+/* Checklist de tipos de deporte */
+#tipo-deporte-checklist label {
+    display: inline-flex !important;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 24px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#tipo-deporte-checklist input[type="checkbox"] {
+    accent-color: #5167F1;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+#tipo-deporte-checklist span {
+    vertical-align: middle;
+}
+
+/* Leyenda de colores en el checklist */
+#tipo-deporte-checklist span[style*="background-color"] {
+    border-radius: 6px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+/* Ajuste de separación debajo del checklist */
+#tipo-deporte-checklist {
+    margin-bottom: 16px;
+}
+
+.metric-header {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 16px !important;
+    padding-top: 0px !important;
+}
+
+.metric-value-container {
+    margin-top: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.gender-title {
+    margin-bottom: 8px !important;
+}
+.gender-img-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-grow: 1 !important;
+}
+.gender-label {
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+.gender-value {
+    color: #828282 !important;
+    font-size: 15px !important;
+}
+.gender-legend-item {
+    margin-right: 32px !important;
+    cursor: pointer !important;
+}
+.gender-card {
+    height: 454px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    flex: 1 1 auto !important;
+}
+
+.donut-title {
+    margin-bottom: 8px !important;
+}
+
+.trend-title {
+    margin-bottom: 8px !important;
+}
+
+.tipo-deporte-color {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.tipo-deporte-label {
+    margin-right: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.departamento-label {
+    font-weight: bold !important;
+    margin-bottom: 8px !important;
+    font-size: 16px !important;
+    color: #828282 !important;
+    display: block;
+}
+.departamento-dropdown,
+.municipio-dropdown,
+.institucion-dropdown {
+    margin-bottom: 0px !important;
+}
+
+/* Clases de altura */
+.h-454 {
+    height: 454px !important;
+}
+
+.h-300 {
+    height: 200px !important;
+}
+
+/* Ajustes específicos para las tarjetas de métricas */
+.dash-card.metric-card {
+    height: 200px !important;
+    display: flex !important;
+}
+
+.dash-card.metric-card .card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding-bottom: 4px !important;
+}
+
+/* Ajustes específicos para las tarjetas grandes */
+.dash-card.gender-card,
+.dash-card.donut-card,
+.dash-card.trend-card {
+    height: 454px !important;
+}
+
+/* Ajustes específicos para la tarjeta de deportes */
+.dash-card .tipo-deporte-checklist {
+    margin-bottom: 16px !important;
+}
+
+.dash-card .dash-graph {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+}
