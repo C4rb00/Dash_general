@@ -1,3 +1,7 @@
+from dash import html, dcc
+import dash_bootstrap_components as dbc
+import plotly.graph_objects as go
+
 TIPOS_DEPORTE = ["conjunto", "individual", "para deporte"]
 color_map = {
     "conjunto": "#5167F1",
@@ -5,9 +9,6 @@ color_map = {
     "para deporte": "#001F54"
 }
 
-from dash import html, dcc
-import dash_bootstrap_components as dbc
-import plotly.graph_objects as go
 
 class DashboardCard:
     def __init__(
