@@ -23,7 +23,7 @@ def get_layout(departamentos, municipios, TIPOS_DEPORTE):
                         placeholder="Seleccionar departamento",
                         className="departamento-dropdown"
                     ),
-                    width=3
+                    width=4
                 ),
                 dbc.Col(
                     dcc.Dropdown(
@@ -33,15 +33,7 @@ def get_layout(departamentos, municipios, TIPOS_DEPORTE):
                         placeholder="Seleccionar municipio",
                         className="municipio-dropdown"
                     ),
-                    width=3
-                ),
-                dbc.Col(
-                    dcc.Dropdown(
-                        placeholder="Seleccionar institución",
-                        disabled=True,
-                        className="institucion-dropdown"
-                    ),
-                    width=3
+                    width=4
                 ),
                 dbc.Col(
                     html.Button("Filtrar", id="filtrar-btn", className="w-100 filter-btn"),
